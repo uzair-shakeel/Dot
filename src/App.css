@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease;
+}
+/* Colors */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+/* This is for some default styling------------------- */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.section {
+  padding: 4rem 0 2rem;
+}
+.container {
+  padding: 0 1.5rem;
+}
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.gird {
+  display: grid;
+  align-items: center;
+}
+.btn {
+  padding: 0.4rem 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3rem;
+  background: var(--PrimaryColor);
+}
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.btn:hover a {
+  color: var(--whiteColor);
+}
+
+.secIntro {
+  max-width: 70%;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+.secIntro .secTitle {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.secIntro p {
+  font-size: 13px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+img video {
+  width: 100%;
+  height: auto;
+}
+input {
+  font-size: 100%;
+}
+
+/* MEDIA QUERIES ======================= */
+@media screen and (min-width: 1140px) {
+  .container {
+    width: 90% !important;
+    margin: auto !important;
+  }
+}
+
+/* Page Design  */
+::selection {
+  background: var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(greyBg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--PrimaryColor);
+  cursor: pointer;
+}
